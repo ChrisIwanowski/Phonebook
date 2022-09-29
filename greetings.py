@@ -4,7 +4,7 @@ print(f'Hello {user_name}, I am your phone book.')
 
 user_age = (input('Please provide your age: '))
 
-if user_age.isdigit():
+if user_age.isnumeric():
     user_age = int(user_age)
 else:
    print('That doesn\'t seem to be an integer')

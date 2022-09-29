@@ -1,0 +1,12 @@
+from multiprocessing.forkserver import write_signed
+import string
+
+ugly_phone_list = ["98-333-111", "12--323-566", "123-34-221", "99-948-321", "-12-123-346",
+                     "894-58438-543", "85-234-222",
+                     "12-333-444-", "99-888--433", "15-465-876", "98-555-22", "-3-355-333", "3--344-53", "--2--45---",
+                     "11-111-222", "12#22$34$222", "98 223 555"]
+list = []
+wrong = string.punctuation
+for i in ugly_phone_list:
+    if int(i[:2]) != wrong:
+        print(i)
